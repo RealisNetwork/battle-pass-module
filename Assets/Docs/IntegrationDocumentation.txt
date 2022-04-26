@@ -1,0 +1,9 @@
+1) Client must implement interfaces:
+        - IBattlePassValidationService (This is where the player's balance is checked to perform an action.)
+        - IBattlePassNetworkRequestsLayer (This is how messages are sent to the server.)
+        - IBattlePassCallbacks (Here the processing of events that occurred during the operation of the module is implemented.)
+
+        - IRewardStrategy (It is necessary to implement the processing of accrual of each type of awards)
+2) All responses from the server must be forwarded to the "IBattlePassResponseListener"
+3) The "IBattlePassService" interface is used to work with the module.
+4) ZenjectInstallerExtension extension for quick bind using a Zenject plugin. You will also need to additionally bind all interfaces implemented by the client.
