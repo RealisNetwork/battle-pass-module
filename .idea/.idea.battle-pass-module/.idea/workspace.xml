@@ -1,16 +1,163 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="762dae65-c194-43de-9b12-9912795017fa" name="Changes" comment="" />
+    <list default="true" id="762dae65-c194-43de-9b12-9912795017fa" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Enums.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Enums/EBattlePassRewardState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Enums/EBattlePassRewardState.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Enums/EBattlePassSeasonState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Enums/EBattlePassSeasonState.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Enums/EResponseType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Enums/EResponseType.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Impls.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Impls/BattlePassResponseCallbacks.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Impls/BattlePassResponseCallbacks.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Impls/BattlePassService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Impls/BattlePassService.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Interfaces/IBattlePassCallbacks.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Interfaces/IBattlePassCallbacks.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Interfaces/IBattlePassNetworkRequestsLayer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Interfaces/IBattlePassNetworkRequestsLayer.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Interfaces/IBattlePassResponseCallbacks.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Interfaces/IBattlePassResponseCallbacks.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Interfaces/IBattlePassResponseListener.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Interfaces/IBattlePassResponseListener.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Interfaces/IBattlePassRewardStrategy.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Interfaces/IBattlePassRewardStrategy.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Interfaces/IBattlePassValidationService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Interfaces/IBattlePassValidationService.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Models.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Models/Config.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Models/Config/EnumTypeVo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Models/Config/EnumTypeVo.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Models/Data.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Models/Data/BattlePassTypePriceVo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Models/Data/BattlePassTypePriceVo.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Models/Data/ExperienceVo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Models/Data/ExperienceVo.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Models/Data/RewardVo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Models/Data/RewardVo.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Models/DataTransport.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Models/DataTransport/BattlePassDataDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Models/DataTransport/BattlePassDataDto.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Models/DataTransport/BattlePassLevelDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Models/DataTransport/BattlePassLevelDto.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Models/DataTransport/BattlePassPriceDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Models/DataTransport/BattlePassPriceDto.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Models/DataTransport/BattlePassProgressionDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Models/DataTransport/BattlePassProgressionDto.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Models/DataTransport/BattlePassRewardDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Models/DataTransport/BattlePassRewardDto.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Models/DataTransport/CurrentExperienceVo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Models/DataTransport/CurrentExperienceVo.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Models/DataTransport/ItemDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Models/DataTransport/ItemDto.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Models/DataTransport/PricesVo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Models/DataTransport/PricesVo.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Models/DataTransport/SeasonInfoVo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Models/DataTransport/SeasonInfoVo.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Models/DataTransport/UserBattlePassRewardDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Models/DataTransport/UserBattlePassRewardDto.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Services.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Services/IBattlePassConfigService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Services/IBattlePassConfigService.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Services/IInitializeService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Services/IInitializeService.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Services/IProgressService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Services/IProgressService.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Services/IRewardService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Services/IRewardService.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Services/ISeasonService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Services/ISeasonService.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Services/IStateService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Services/IStateService.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Services/Impls.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Services/Impls/BattlePassConfigService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Services/Impls/BattlePassConfigService.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Services/Impls/InitializeService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Services/Impls/InitializeService.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Services/Impls/ProgressService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Services/Impls/ProgressService.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Services/Impls/RewardService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Services/Impls/RewardService.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Services/Impls/SeasonService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Services/Impls/SeasonService.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Services/Impls/StateService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Services/Impls/StateService.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Strategies.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Strategies/IRewardStrategy.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Strategies/IRewardStrategy.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Utils.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Utils/ZenjectInstallerExtension.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Utils/ZenjectInstallerExtension.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Test.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Test/Enums.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Test/Enums/EBattleBassType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Test/Enums/ERewardType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Test/Enums/ERewardType.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Test/Impls.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Test/Impls/BattlePassCallbacks.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Test/Impls/BattlePassCallbacks.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Test/Impls/BattlePassNetworkRequestsLayer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Test/Impls/BattlePassNetworkRequestsLayer.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Test/Impls/BattlePassValidationService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Test/Impls/BattlePassValidationService.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Test/Installer.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Test/Installer/BattlePassInstaller.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Test/Installer/BattlePassInstaller.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Test/Strategies.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Test/Strategies/HardCurrencyRewardStrategy.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Test/Strategies/HardCurrencyRewardStrategy.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Test/Strategies/HeroRewardStrategy.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Test/Strategies/HeroRewardStrategy.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Test/Strategies/ItemRewardStrategy.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Test/Strategies/ItemRewardStrategy.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Test/Strategies/LootboxRewardStrategy.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Test/Strategies/LootboxRewardStrategy.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Test/TestBootstrap.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Test/TestBootstrap.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.battle-pass-module/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.battle-pass-module/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Interfaces.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Interfaces.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Interfaces/IBattlePassService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Interfaces/IBattlePassService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Interfaces/IBattlePassService.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Package/BattlePassModule/Interfaces/IBattlePassService.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/bc1d04d811fc4873ab7d8d9d4daddcc9568788/b5/b237451d/Enum.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/eae584ce26bc40229c1b1aa476bfa5893e2600/c4/55c07138/Action`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Package/BattlePassModule/Interfaces/IBattlePassService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/bc1d04d811fc4873ab7d8d9d4daddcc9568788/30/5dd94629/Action`1.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="27NyRqaHxvihCf6wBizCeOLPTHV" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -23,8 +170,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="rider.run.widget.enabled.cache" value="false" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -57,16 +205,50 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1649174833967</updated>
-      <workItem from="1649175181520" duration="46000" />
+      <workItem from="1649175181520" duration="1150000" />
+      <workItem from="1649234117110" duration="2474000" />
+      <workItem from="1649663373573" duration="8882000" />
+      <workItem from="1649747756692" duration="17054000" />
+      <workItem from="1649792626361" duration="3196000" />
+      <workItem from="1649831465113" duration="15715000" />
+      <workItem from="1649919354077" duration="3675000" />
+      <workItem from="1649924584294" duration="18365000" />
+      <workItem from="1650005043910" duration="15347000" />
+      <workItem from="1650263496576" duration="594000" />
+      <workItem from="1650356024909" duration="4822000" />
+      <workItem from="1650437694802" duration="18459000" />
+      <workItem from="1650873507288" duration="9158000" />
     </task>
+    <task id="LOCAL-00001" summary="Create new project">
+      <created>1649175264604</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1649175264604</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Create new project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create new project" />
   </component>
 </project>
