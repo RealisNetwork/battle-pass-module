@@ -14,7 +14,7 @@ namespace Test
 
 		public void Initialize()
 		{
-			_battlePassService.Initialize<ERewardType, EBattleBassType>();
+			_battlePassService.Initialize();
 		}
 	}
 }

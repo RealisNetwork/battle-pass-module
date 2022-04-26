@@ -34,13 +34,17 @@ namespace Package.BattlePassModule.Impls
 			_seasonService = seasonService;
 		}
 
-		public void Initialize<TRewardType, TBattlePassType>()
-			where TRewardType : Enum
-			where TBattlePassType : Enum
-		{
-			_battlePassConfigService.SetTypes<TRewardType, TBattlePassType>();
-			_initializeService.Initialize();
-		}
+		// public void Initialize<TRewardType, TBattlePassType>()
+		// 	where TRewardType : Enum
+		// 	where TBattlePassType : Enum
+		// {
+		// 	_battlePassConfigService.SetTypes<TRewardType, TBattlePassType>();
+		// 	_initializeService.Initialize();
+		// }
+
+
+		public void Initialize() => _initializeService.Initialize();
+		public void Initialize(Action onInitialized) => _initializeService.Initialize(onInitialized);
 
 		public int CurrentLevel => _progressService.CurrentLevel;
 		public int CurrentExperience => _progressService.CurrentExperience;
@@ -50,11 +54,11 @@ namespace Package.BattlePassModule.Impls
 		public bool IsHaveBattlePassType(int type) => _stateService.IsHaveBattlePassType(type);
 		public float GetBattlePassTypePrice(int type) => _stateService.GetBattlePassTypePrice(type);
 		public bool BuyBattlePassType(int type) => _stateService.BuyBattlePassType(type);
-		
+
 		public bool ClaimReward(int rewardId) => _rewardService.ClaimReward(rewardId);
 		public bool ClaimAllReward() => _rewardService.ClaimAllRewards();
 		public RewardVo GetRewardByRewardId(int rewardId) => _rewardService.GetRewardByRewardId(rewardId);
-		
+
 		public int SeasonId => _seasonService.SeasonId;
 		public EBattlePassSeasonState CurrentSeasonState => _seasonService.CurrentSeasonState;
 		public long StateUpdateDateMs => _seasonService.StateUpdateDateMs;

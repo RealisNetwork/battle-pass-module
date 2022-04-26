@@ -1,3 +1,4 @@
+using System;
 using Package.BattlePassModule.Enums;
 using Package.BattlePassModule.Interfaces;
 
@@ -13,6 +14,7 @@ namespace Package.BattlePassModule.Services.Impls
 		private bool _isInitializing;
 		private EResponseType _responsesDone;
 		private EResponseType _neededResponsesDone;
+		private Action _onInitialized;
 
 		public InitializeService
 		(
@@ -24,6 +26,12 @@ namespace Package.BattlePassModule.Services.Impls
 			_battlePassNetworkRequestsLayer = battlePassNetworkRequestsLayer;
 			_battlePassCallbacks = battlePassCallbacks;
 			_battlePassResponseCallbacks = battlePassResponseCallbacks;
+		}
+
+		public void Initialize(Action onInitialized)
+		{
+			_onInitialized = onInitialized;
+			Initialize();
 		}
 
 		public void Initialize()
@@ -63,6 +71,7 @@ namespace Package.BattlePassModule.Services.Impls
 				return;
 			_isInitializing = false;
 			_battlePassCallbacks.OnInitialized();
+			_onInitialized?.Invoke();
 		}
 	}
 }
