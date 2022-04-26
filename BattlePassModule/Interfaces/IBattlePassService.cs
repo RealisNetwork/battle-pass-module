@@ -7,9 +7,12 @@ namespace Package.BattlePassModule.Interfaces
 {
 	public interface IBattlePassService
 	{
-		void Initialize<TRewardType, TBattlePassType>()
-			where TRewardType : Enum
-			where TBattlePassType : Enum;
+		// void Initialize<TRewardType, TBattlePassType>()
+		// 	where TRewardType : Enum
+		// 	where TBattlePassType : Enum;
+		
+		void Initialize();
+		void Initialize(Action onInitialized);
 
 		
 		// Progress
