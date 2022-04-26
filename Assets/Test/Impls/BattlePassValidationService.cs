@@ -6,9 +6,9 @@ namespace Test.Impls
 	{
 		private readonly float _currencyAmount;
 
-		public BattlePassValidationService(float currencyAmount)
+		public BattlePassValidationService()
 		{
-			_currencyAmount = currencyAmount;
+			_currencyAmount = 100f;
 		}
 
 

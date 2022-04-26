@@ -10,22 +10,13 @@ namespace Test.Installer
 	{
 		public override void InstallBindings()
 		{
-			BindStrategies();
-
-			Container.BindInterfacesTo<BattlePassCallbacks>().AsSingle();
-			Container.BindInterfacesTo<BattlePassNetworkRequestsLayer>().AsSingle();
-			Container.BindInterfacesTo<BattlePassValidationService>().AsSingle().WithArguments(100f);
-			Container.BindBattlePass();
-
+			Container.BindBattlePass<BattlePassCallbacks, BattlePassNetworkRequestsLayer, BattlePassValidationService>(
+				typeof(HeroBattlePassRewardStrategy),
+				typeof(ItemBattlePassRewardStrategy),
+				typeof(LootboxBattlePassRewardStrategy),
+				typeof(HardCurrencyBattlePassRewardStrategy));
+			
 			Container.BindInterfacesTo<TestBootstrap>().AsSingle().NonLazy();
-		}
-
-		public void BindStrategies()
-		{
-			Container.BindInterfacesTo<HeroRewardStrategy>().AsSingle();
-			Container.BindInterfacesTo<ItemRewardStrategy>().AsSingle();
-			Container.BindInterfacesTo<LootboxRewardStrategy>().AsSingle();
-			Container.BindInterfacesTo<HardCurrencyRewardStrategy>().AsSingle();
 		}
 	}
 }

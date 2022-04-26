@@ -11,7 +11,7 @@ namespace Package.BattlePassModule.Services.Impls
 {
 	internal class RewardService : IRewardService, IDisposable
 	{
-		private readonly List<IRewardStrategy> _rewardsStrategies;
+		private readonly List<IBattlePassRewardStrategy> _rewardsStrategies;
 		private readonly IBattlePassNetworkRequestsLayer _battlePassNetworkRequestsLayer;
 		private readonly IBattlePassResponseCallbacks _battlePassResponseCallbacks;
 		private readonly IBattlePassCallbacks _battlePassCallbacks;
@@ -26,7 +26,7 @@ namespace Package.BattlePassModule.Services.Impls
 
 		public RewardService
 		(
-			List<IRewardStrategy> rewardsStrategies,
+			List<IBattlePassRewardStrategy> rewardsStrategies,
 			IBattlePassNetworkRequestsLayer battlePassNetworkRequestsLayer,
 			IBattlePassResponseCallbacks battlePassResponseCallbacks,
 			IBattlePassCallbacks battlePassCallbacks
@@ -168,7 +168,7 @@ namespace Package.BattlePassModule.Services.Impls
 				_finalRewardClaimed++;
 		}
 
-		private IRewardStrategy GetRewardStrategy(int rewardType)
+		private IBattlePassRewardStrategy GetRewardStrategy(int rewardType)
 		{
 			for (var i = 0; i < _rewardsStrategies.Count; i++)
 			{

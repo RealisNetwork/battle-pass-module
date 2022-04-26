@@ -3,13 +3,13 @@ using Package.BattlePassModule.Strategies;
 
 namespace Test.Strategies
 {
-	public class ItemRewardStrategy : IRewardStrategy
+	public class ItemBattlePassRewardStrategy : IBattlePassRewardStrategy
 	{
 		public int RewardType => (int)ERewardType.Item;
 
 		public void CreditReward(ItemDto rewardVoItemReward)
 		{
-			UnityEngine.Debug.Log($"[{nameof(HeroRewardStrategy)}] Credited Item");
+			UnityEngine.Debug.Log($"[{nameof(HeroBattlePassRewardStrategy)}] Credited Item");
 		}
 	}
 }

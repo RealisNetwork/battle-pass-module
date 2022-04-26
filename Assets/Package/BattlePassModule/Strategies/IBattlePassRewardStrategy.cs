@@ -2,7 +2,7 @@ using Package.BattlePassModule.Models.DataTransport;
 
 namespace Package.BattlePassModule.Strategies
 {
-	public interface IRewardStrategy
+	public interface IBattlePassRewardStrategy
 	{
 		int RewardType { get; }
 
